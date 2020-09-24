@@ -1,24 +1,30 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <!-- Required meta tags -->    
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->     
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">                    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic-bootstrap.min.css" integrity="sha256-BJ/G+e+y7bQdrYkS2RBTyNfBHpA9IuGaPmf9htub5MQ=" crossorigin="anonymous" />        
+    <link rel="stylesheet" href="public/stylesheets/styles.css">    
+    <link rel="icon" href="public/assets/img/favicon-32x32.png">    
     <meta name="description" content="Organización Lombardini junto con Galeno Seguros se unen para brindarles el mejor seguro a los miembros de la Gendarmería Nacional" />
     <meta name="keywords" content="Seguros, Galeno, Gendarmería, Lombardini" />
     <meta property="og:image" content="public/assets/img/favicon-32x32.png">
     <meta name="author" content="Pymesoft Argentina">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">        
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic-bootstrap.min.css" integrity="sha256-BJ/G+e+y7bQdrYkS2RBTyNfBHpA9IuGaPmf9htub5MQ=" crossorigin="anonymous" />            
-    <link rel="icon" href="public/assets/img/favicon-32x32.png">
+    <!-- endbuild -->
     
     <title>Inicio | Seguros Gendarmería</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="public/stylesheets/bootstrap.min.css" rel="stylesheet">
     <!-- Custom carrousel styles -->    
     <link href="public/stylesheets/carousel.css" rel="stylesheet">
-    <!-- Custom styles -->    
-    <link href="public/stylesheets/styles.css" rel="stylesheet">
+
   </head>
   <body>
     <header>
@@ -97,19 +103,19 @@
             <img class="rounded-circle" src="public/assets/img/lg.png" alt="Organización Lombardini" width="140" height="140">
             <h2>Organización Lombardini</h2>
             <p>Nos especializamos en los servicios de asesoría y producción de seguros generales.</p>
-            <p><a class="btn btn-secondary" href="lombardini.html" role="button">Más información</a></p>
+            <p><a class="btn btn-primary" href="lombardini.html" role="button">Más información</a></p>
           </div><!-- /.col-lg-4 -->
           <div class="col-lg-4">
             <img class="rounded-circle" src="public/assets/img/galeno.png" alt="Galeno Seguros" width="140" height="140">
             <h2>Galeno Seguros</h2>
             <p>Coberturas diseñadas para cuidarte a vos y a lo que más querés.</p>
-            <p><a class="btn btn-secondary" href="galeno.html" role="button">Más información</a></p>
+            <p><a class="btn btn-primary" href="galeno.html" role="button">Más información</a></p>
           </div><!-- /.col-lg-4 -->          
           <div class="col-lg-4">
             <img class="rounded-circle" src="public/assets/img/logo-gendarmeria.png" alt="Gendarmería Nacional" width="140" height="140">
             <h2>Gendarmería Nacional</h2>
             <p>Convenio con Gendarmería Nacional para obtener beneficios y descuentos.</p>
-            <p><a class="btn btn-secondary" href="gendarmeria.html" role="button">Más información</a></p>
+            <p><a class="btn btn-primary" href="gendarmeria.html" role="button">Más información</a></p>
           </div><!-- /.col-lg-4 -->          
         </div><!-- /.row -->
 
@@ -139,16 +145,16 @@
         </div>
       </footer>    
     </main>
-    
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script>window.jQuery || document.write('<script src="public/javascripts/jquery-slim.min.js"><\/script>')</script>
-    <script src="public/javascripts/popper.min.js"></script>
-    <script src="public/javascripts/bootstrap.min.js"></script>
-    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
-    <script src="public/javascripts/holder.min.js"></script>
+    <!-- Optional JavaScript -->
+    <!-- build:js dist/index.css -->    
+    <script>
+      $(function(){
+        $('.carousel').carousel({
+          interval: 2000
+        });              
+      });
+    </script>
+    <!-- endbuild -->    
     <!-- GetButton.io widget -->
     <script type="text/javascript">
       (function () {
@@ -163,6 +169,6 @@
           var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
       })();
     </script>
-    <!-- /GetButton.io widget -->    
+    <!-- /GetButton.io widget -->        
   </body>
 </html>
