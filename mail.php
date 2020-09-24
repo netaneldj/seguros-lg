@@ -1,11 +1,11 @@
 <?php
 $nombre = $_POST['nombre'];
-$empresa = $_POST['empresa'];
+$legajo = $_POST['legajo'];
 $email = $_POST['email'];
 $telefono = $_POST['telefono'];
 $mensaje = $_POST['mensaje'];
 $to = "info@seguros-lg.com.ar";
-$subject = "Consulta web de $nombre desde Seguros Gendarmería";
+$subject = "Consulta web de $nombre desde Seguros Gendarmerï¿½a";
 $headers =  'MIME-Version: 1.0' . "\r\n";
 $headers .= "From: $email\r\n";
 $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
@@ -20,11 +20,10 @@ $body.='<h2>Consulta de '.$nombre.' desde la web de Pymesoft</h2>';
 $body.='<div class="textonormal">';
 $body.='<table width="500" height="10" class="normal" align="left">';
 $body.='<tr><td width="100"><strong>Nombre:</strong></td><td width="400">'.$nombre.'</td></tr>';
-$body.='<tr><td width="100"><strong>Empresa:</strong></td><td width="400">'.$empresa.'</td></tr>';
+$body.='<tr><td width="100"><strong>Legajo:</strong></td><td width="400">'.$legajo.'</td></tr>';
 $body.='<tr><td><strong>Email:</strong></td><td>'.$email.'</td></tr>';
 $body.='<tr><td><strong>Telefono:</strong></td><td>'.$telefono.'</td></tr>';
 $body.='<tr style="vertical-align:top"><td><strong>Mensaje:</strong></td><td>'.$mensaje.'</td></tr>';
-//$cuerpo.='<tr style="vertical-align:top"><td><strong>Consulta:</strong></td><td>'.htmlentities(utf8_decode($consulta)).'</td></tr>';
 $body.='</table></div>';
 $body.='</body></html>';
 $mail_status = mail($to, $subject, $body, $headers);
